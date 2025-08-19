@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Phuong Nguyen, RMIT, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.41.0.0
+Toolchain Path:  C:\Users\NC\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      Nu_Link.dll V3.18
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\NC\Downloads\abc\abc\KEIL\M480_LCD_with_Touch.uvproj
+Project File Date:  05/25/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\NC\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'M480_LCD_with_Touch'
+creating preprocessor file for EBI_LCD_Module.c...
+creating preprocessor file for system_M480.c...
+compiling system_M480.c...
+creating preprocessor file for retarget.c...
+creating preprocessor file for clk.c...
+creating preprocessor file for main.c...
+../main.c(238): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+  238 |     int dx = abs(x1 - x0);
+      |              ^
+../main.c(238): note: include the header <math.h> or explicitly provide a declaration for 'abs'
+../main.c(269): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+  269 |     for (int i = 0; i < 5; i++) {
+      |          ^
+../main.c(275): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+  275 |     for (int f = 0; f < 5; f++) {
+      |          ^
+3 warnings generated.
+compiling main.c...
+assembling startup_M480.s...
+creating preprocessor file for sys.c...
+compiling retarget.c...
+../EBI_LCD_Module.c(43): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+   43 |     for (uint16_t i = 0; i < height; i++) {
+      |          ^
+../EBI_LCD_Module.c(44): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+   44 |         for (uint16_t j = 0; j < width; j++) {
+      |              ^
+2 warnings generated.
+compiling EBI_LCD_Module.c...
+creating preprocessor file for timer.c...
+creating preprocessor file for uart.c...
+compiling sys.c...
+compiling clk.c...
+compiling timer.c...
+creating preprocessor file for gpio.c...
+compiling uart.c...
+creating preprocessor file for eadc.c...
+creating preprocessor file for ebi.c...
+compiling eadc.c...
+compiling gpio.c...
+compiling ebi.c...
+linking...
+Program Size: Code=6500 RO-data=10268 RW-data=44 ZI-data=2144  
+After Build - User command #1: fromelf --bin ".\obj\M480_LCD_with_Touch.axf" --output ".\obj\M480_LCD_with_Touch.bin"
+After Build - User command #2: fromelf --text -c ".\obj\M480_LCD_with_Touch.axf" --output ".\obj\M480_LCD_with_Touch.txt"
+".\obj\M480_LCD_with_Touch.axf" - 0 Error(s), 5 Warning(s).
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
